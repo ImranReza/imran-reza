@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/logo2.png" alt="imran reza" />
+          </div>
+          <ul id="sidemenu" class="nav-items">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#protfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>Software Enginner</h1>
+          <p>Hi, I am <span>Imran Reza</span><br />from Bangladesh</p>
+        </div>
+      </div>
+    </header>
+    <!-- about section  -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/imranreza2.png" alt="imran reza" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-text">About Me</h2>
+            <p>
+              I'm Imran Reza, a Computer Science and Engineering student at
+              Pundra University of Science and Technology, originally from
+              Malotinogor, Bogura. With a strong passion for technology, I've
+              developed solid skills in programming and software development.
+              Outside of my studies, I enjoy movies and traveling with friends.
+              My ultimate goal is to start my own software firm and create
+              impactful solutions.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>C Programming</span><br />A good Experience on c
+                  language
+                </li>
+                <li>
+                  <span>Java Programming</span><br />A good Experience on Java
+                  language
+                </li>
+                <li>
+                  <span>Web Development</span><br />Design a website and build
+                  the website with html, css, javaScript, mysql,php,react js,
+                  node js, other frameworks etc.
+                </li>
+                <li>
+                  <span>Mobile Development</span><br />Design Mobile application
+                  with Android studio
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Academic Projects</span><br />
+                  Developed a variety of software applications and tackled
+                  complex challenges in programming and algorithm design during
+                  my studies in Computer Science and Engineering.
+                </li>
+                <li>
+                  <span>Team Collaboration</span><br />Gained valuable
+                  experience in teamwork and project management through group
+                  projects, enhancing my communication and collaboration skills.
+                </li>
+                <li>
+                  <span>Technical Skills</span><br />Proficient in
+                  c,java,javaScript, php programming language with hands-on
+                  experience in software development tools and platforms.
+                </li>
+                <li>
+                  <span>Problem-Solving</span><br />Developed strong
+                  problem-solving abilities by analyzing and optimizing code,
+                  designing user-friendly interfaces, and debugging.
+                </li>
+                <li>
+                  <span>Passion Projects</span><br />Worked on personal tech
+                  projects to explore new ideas and deepen my expertise in
+                  software development.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>B.sc in CSE - current</span><br />Currently I study in
+                  Computer Science and Engineering at Pundra University Science
+                  & Technology, Bogura.
+                </li>
+                <li>
+                  <span>HSC</span><br />Passing Year: 2019, College: Govt. Shah
+                  Sultan College, Bogura, GPA: 4.67
+                </li>
+                <li>
+                  <span>SSC</span><br />Passing Year: 2017, School: Police lince
+                  School and College, Bogura, GPA: 5.00
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-text">My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Software Development</h2>
+            <p>
+              I offer tailored software solutions to meet your specific needs,
+              whether it's developing a web application, mobile app, or desktop
+              software.
+            </p>
+            <a
+              href="https://www.geeksforgeeks.org/what-is-software-development/"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Website Development</h2>
+            <p>
+              I create responsive, user-friendly websites with clean design and
+              efficient functionality, ensuring a seamless experience for your
+              users.
+            </p>
+            <a
+              href="https://www.geeksforgeeks.org/web-development/"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              From concept to deployment, I develop mobile applications that are
+              intuitive, robust, and optimized for performance across various
+              devices.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Mobile_app_development"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <h2>Technical Consulting</h2>
+            <p>
+              Need guidance on a tech project? I provide expert advice on
+              software development strategies, project planning, and best
+              practices to help you achieve your goals.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Information_technology_consulting"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- protfolio section  -->
+    <div id="protfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/blog-project.jpg" alt="blog-project" />
+            <div class="layer">
+              <h3>Blog Website</h3>
+              <p class="info">
+                This is a fully responsive blog platform where users can create
+                and manage posts, while I handle the overall site management as
+                the admin. It's designed to be user-friendly and engaging for
+                all.
+              </p>
+              <a
+                href="https://github.com/ImranReza/Blog-Website"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/tic-tac-toe.jpg" alt="tic-tac-toe" />
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p class="info">
+                This is a simple Tic-Tac-Toe game built using HTML, CSS, and
+                JavaScript. The game features a 3x3 grid where two players take
+                turns to place their marks (X or O). The JavaScript handles the
+                game logic, including player turns, checking for a winner, and
+                resetting the board. The game is fully functional and easy to
+                play, with a clean and responsive design.
+              </p>
+              <a
+                href="https://github.com/ImranReza/JavaScript-projects"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="./images/./college-voting-stystem.PNG"
+              alt="college-voting-system"
+            />
+            <div class="layer">
+              <h3>College Voting System</h3>
+              <p class="info">
+                A college voting system built with Java enables secure and
+                efficient student elections. It features user authentication,
+                allowing only eligible voters to participate, and provides
+                candidate information for informed voting. The system ensures
+                each student can vote only once per position and displays
+                real-time results once voting ends. Administrators manage
+                candidate registration, election schedules, and results through
+                the system.
+              </p>
+              <a
+                href="https://github.com/ImranReza/Java-Projects"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- contact section  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-text">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>imranreza.cse@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>01787747302</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/imran.reza.564" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/s-m-imran-reza-356806229/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/ImranReza" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+
+            <a href="./cv/Imran Reza.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="ce7fe669-682a-4a5d-91d5-ad7f91c922a2"
+              />
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="copyright">
+      <p>Copyright &copy;, All rights reserved by the Imran Reza</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
