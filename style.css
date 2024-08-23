@@ -37,9 +37,23 @@ header {
   width: 100%;
   height: 100vh;
   background-image: url(images/imran3.png);
+  background-color: #013030;
   background-size: 700px;
   background-position: right bottom;
   background-repeat: no-repeat;
+}
+
+.red {
+  color: #ff004f;
+}
+
+.green {
+  color: green;
+}
+
+.logo p {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .container {
@@ -91,6 +105,7 @@ header {
 
 .header-text span {
   color: var(--text-color2);
+  font-weight: bold;
 }
 
 /* about section  */
@@ -157,7 +172,9 @@ header {
 }
 
 .tab-contents ul li span {
-  color: var(--text-color2);
+  color: var(--text_color);
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .tab-contents {
@@ -241,7 +258,7 @@ header {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), #013030);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -477,6 +494,10 @@ nav .fas {
     flex-basis: 100%;
   }
 
+  .info {
+    display: none;
+  }
+
   #copyright {
     font-size: 14px;
   }
@@ -496,6 +517,10 @@ nav .fas {
 
   .header-text h1 {
     font-size: 30px;
+  }
+
+  .info {
+    display: none;
   }
 }
 
